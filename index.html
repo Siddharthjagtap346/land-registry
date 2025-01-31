@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Registry</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.0/web3.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+        /* Some simple CSS to style the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .form-container {
+            display: none;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .input-field {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Land Registry</h1>
+
+        <!-- Register Land Form -->
+        <div class="form-container" id="registerLandForm">
+            <h3>Register Land</h3>
+            <input id="landId" class="input-field" type="text" placeholder="Land ID" required>
+            <input id="location" class="input-field" type="text" placeholder="Location (City)" required>
+            <input id="area" class="input-field" type="number" placeholder="Area (sq meters)" required>
+            <button onclick="registerLand()">Register Land</button>
+        </div>
+
+        <!-- Transfer Ownership Form -->
+        <div class="form-container" id="transferOwnershipForm">
+            <h3>Transfer Ownership</h3>
+            <input id="transferLandId" class="input-field" type="text" placeholder="Land ID" required>
+            <input id="newOwner" class="input-field" type="text" placeholder="New Owner's Address" required>
+            <button onclick="transferOwnership()">Transfer Ownership</button>
+        </div>
+
+        <!-- Get Land Details Form -->
+        <div class="form-container" id="getLandForm">
+            <h3>Get Land Details</h3>
+            <input id="getLandId" class="input-field" type="text" placeholder="Land ID" required>
+            <button onclick="getLand()">Get Land Details</button>
+        </div>
+
+        <!-- Buttons to show the forms -->
+        <div class="button-container">
+            <button onclick="showRegisterLandForm()">Register Land</button>
+            <button onclick="showTransferOwnershipForm()">Transfer Ownership</button>
+            <button onclick="showGetLandForm()">Get Land Details</button>
+        </div>
+    </div>
+</body>
+</html>
