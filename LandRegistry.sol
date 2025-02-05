@@ -43,4 +43,8 @@ contract LandRegistry {
     function getLand(uint256 _id) public view returns (uint256, string memory, uint256, address, bool) {
         return (lands[_id].id, lands[_id].location, lands[_id].area, lands[_id].owner, lands[_id].registered);
     }
+        // Check if land is registered
+    function isLandRegistered(uint256 _id) public view returns (bool) {
+        return lands[_id].registered;
+    }
 }
