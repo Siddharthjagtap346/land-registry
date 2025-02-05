@@ -62,8 +62,14 @@ This will start the HTTP server and you can access the app on `http://127.0.0.1:
 ### 5. Interact with the DApp
 You can now interact with the DApp through the following actions:
 - **Register a Land**: Fill out the land registration form with land ID, location, and area.
+- ![Screenshot 2025-01-31 191141](https://github.com/user-attachments/assets/f5e65a3b-de8d-4386-9e55-2b3bc83289d4)
+
 - **Transfer Ownership**: Transfer the ownership of a registered land to a new address.
+- ![Screenshot 2025-01-30 221833](https://github.com/user-attachments/assets/c25309da-4b63-4e78-acbd-1a67c21153a3)
+
 - **Get Land Details**: Retrieve details about a specific land by providing its ID.
+- ![image](https://github.com/user-attachments/assets/facd83c3-3751-43d8-b22d-84429dc18185)
+
 
 ## Future Enhancements
 - Implement real-time updates for land transactions.
