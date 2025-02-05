@@ -66,7 +66,7 @@ You can now interact with the DApp through the following actions:
 
 
 - **Transfer Ownership**: Transfer the ownership of a registered land to a new address.
-- ![Screenshot 2025-01-30 221833](https://github.com/user-attachments/assets/c25309da-4b63-4e78-acbd-1a67c21153a3)
+- ![image](https://github.com/user-attachments/assets/4ebdc695-ae2b-4e81-be62-7305857de7c8)
 
 - **Get Land Details**: Retrieve details about a specific land by providing its ID.
 - ![image](https://github.com/user-attachments/assets/facd83c3-3751-43d8-b22d-84429dc18185)
